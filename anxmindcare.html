@@ -1,0 +1,149 @@
+<html>
+	<head> <title>OES</title>
+<style>
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+	textarea {
+    width: 60%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+.headerqe1{
+left:500px;
+font-size:15px;
+font-family:verdana;
+background:#F1F3FC;
+color:#1E0B7B;
+top:200px;
+height:350px;
+width:600px;
+position:absolute;
+}
+
+.headerqe{
+left:400px;
+font-size:15px;
+font-family:verdana;
+background:#F1F3FC;
+color:#1E0B7B;
+top:500px;
+height:100px;
+width:850px;
+position:absolute;
+}
+.logo{
+	text-indent: -999999px;
+	background: url("logo.png");
+	width:150px;
+	height:105px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C6D8CA;
+	color:green;
+}
+
+li {
+    float: left;
+}
+select {
+    width: 80%;
+	font-size:16px;
+    padding: 16px 20px;
+    border:10px solid #F5FFF3;
+    border-radius: 10px;
+    background-color: #F4F4FF;
+	color:#565672;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+	</style>
+	</head>
+	<body>
+	<div >
+<h1 class ="logo">logo here </h1>
+<ul>
+	
+	<li><a href="moderatehomepage.php">TEAM PROFILE</a></li>
+	 <li><a href="Modrator.php">Get help</a></li>
+  <li style="float:right"><a class="active" href="logout.php">Log Out</a></li>
+  <li style="float:right"><b> <a style="color:#51546B;"></a></b></li>
+</ul>
+</div>
+		
+		
+		<form action="selectques.php" method="post">
+		
+			<div class="headerqe1">
+			<center>
+			<h2><center>Want to Contact with MindCare?</h2></center> <br/>
+			<h3><center> Who do you want to meet?</h3></center> <br/>
+			<table id = "customers"> <tr><td><input type="checkbox" name="formDoor[]" value="A" />ADVISOR</tr></td></table><br />
+			<table id = "customers"> <tr><td><input type="checkbox" name="formDoor[]" value="B" />Doctor</tr></td></table><br />
+			<table id = "customers"> <tr><td><input type="checkbox" name="formDoor[]" value="C" />Friend</tr></td></table><br />
+			<table id = "customers"> <tr><td><input type="checkbox" name="formDoor[]" value="E" />COMMUNITY People</tr></td></table><br/>
+			</center>
+			</div>
+	
+			
+			<div class="headerqe">
+			</center>
+
+			<center><input type="submit" name="formSubmit" value="Live Chat" /></center>
+			</center>
+			</div>
+		</form>
+		
+	</body>
+</html>
